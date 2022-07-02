@@ -20,12 +20,16 @@
     </style>
 </head>
 
+<?php
+$nome = "Nome";
+?>
+
 <body>
     <h1>Esempio</h1>
     <form method="post" action="php/esempio.php">
         <!-- il metodo post serve per mandare i dati in maniera "nascosta", più sicuro -->
         <!-- in action indichiamo la pagina che gestisce i dati che inseriamo e mandiamo  -->
-        <label for="nome">Nome</label>
+        <label for="nome"><?php echo $nome; ?></label>
         <input id="nome" type="text" name="nome" placeholder="Inserisci Nome">
         <label for="conome">Cognome</label>
         <input id="cognome" type="text" name="cognome" placeholder="Inserisci Cognome">
